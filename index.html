@@ -53,6 +53,11 @@
         <input type="email" id="email" name="email" required placeholder="example@domain.com">
         <label for="dob" class="required-label">วันเดือนปีเกิด:</label>
         <input type="date" id="dob" name="dob" required>
+        <label for="phone">เบอร์โทรศัพท์ (ไม่บังคับ):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="กรอกเลข 10 หลัก">
+      
+        <label for="bookType" class="required-label">ประเภทของหนังสือที่สนใจ:</label>
+        <textarea id="bookType" name="bookType" rows="3" placeholder="เช่น นิยาย, วิทยาศาสตร์, ประวัติศาสตร์" required></textarea>
     </form>
 </body>
 
