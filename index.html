@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library Membership Registration Form</title>
-  <link rel="stylesheet" href="mystyle.css">
-  </head>
-  <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Membership Registration Form</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
     <form>
         <h1>แบบฟอร์มสมัครสมาชิกห้องสมุด</h1>
-  
-        
-            <label for="thaiName" class="required-label"> ชื่อ-นามสกุล (ภาษาไทย):</label>
-            <div class="name-container">
-                <select id="title" name="title" required>
-                  <option value="">-- กรุณาเลือกคำนำหน้า --</option>
-                  <option value="นาย">นาย</option>
-                  <option value="นาง">นาง</option>
-                  <option value="นางสาว">นางสาว</option>
-                  <option value="ดร.">ดร.</option>
-                  <option value="ศ.">ศ.</option>
-                </select>
+
+
+        <label for="thaiName" class="required-label"> ชื่อ-นามสกุล (ภาษาไทย):</label>
+        <div class="name-container">
+            <select id="title" name="title" required>
+                <option value="">-- กรุณาเลือกคำนำหน้า --</option>
+                <option value="นาย">นาย</option>
+                <option value="นาง">นาง</option>
+                <option value="นางสาว">นางสาว</option>
+                <option value="ดร.">ดร.</option>
+                <option value="ศ.">ศ.</option>
+            </select>
             <input type="text" id="thaiName" name="thaiName" required>
-          </div>
-    
-          <label for="englishName" class="required-label">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
-          <input type="text" id="englishName" name="englishName" pattern="[A-Za-z\s]+" required placeholder="กรอกภาษาอังกฤษเท่านั้น">
-          <div class="gender-container">
+        </div>
+
+        <label for="englishName" class="required-label">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
+        <input type="text" id="englishName" name="englishName" pattern="[A-Za-z\s]+" required
+            placeholder="กรอกภาษาอังกฤษเท่านั้น">
+        <div class="gender-container">
             <label class="required-label">เพศ:</label>
             <label><input type="radio" name="gender" value="male" required> ชาย</label>
             <label><input type="radio" name="gender" value="female"> หญิง</label>
             <label><input type="radio" name="gender" value="other"> อื่นๆ</label>
-          </div>
-        </form>
-  </body>
+        </div>
+        <label for="studentID" class="required-label">รหัสนักศึกษา:</label>
+        <input type="text" id="studentID" name="studentID" pattern="\d{10}" required placeholder="กรอกเลข 10 หลัก">
+    </form>
+</body>
+
 </html>
