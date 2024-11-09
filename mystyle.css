@@ -29,6 +29,12 @@ label {
   margin-bottom: 8px;
   font-weight: bold;
 }
+.Box-of-ALL {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
 .name-container {
     display: flex;
     align-items: center;
@@ -48,6 +54,10 @@ label {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
+}
+#englishName{
+    width: 100%;
+    padding: 10px;
 }
 input[type="email"],
 input[type="date"],

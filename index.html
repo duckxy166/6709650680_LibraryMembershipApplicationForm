@@ -27,8 +27,9 @@
         </div>
 
         <label for="englishName" class="required-label">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
-        <input type="text" id="englishName" name="englishName" pattern="[A-Za-z\s]+" required
-            placeholder="กรอกภาษาอังกฤษเท่านั้น">
+        <div class="Box-of-ALL"><input type="text" id="englishName" name="englishName" pattern="[A-Za-z\s]+" required
+                placeholder="กรอกภาษาอังกฤษเท่านั้น"></div>
+
         <div class="gender-container">
             <label class="required-label">เพศ:</label>
             <label><input type="radio" name="gender" value="male" required> ชาย</label>
@@ -36,8 +37,9 @@
             <label><input type="radio" name="gender" value="other"> อื่นๆ</label>
         </div>
         <label for="studentID" class="required-label">รหัสนักศึกษา:</label>
-        <input type="text" id="studentID" name="studentID" pattern="\d{10}" required placeholder="กรอกเลข 10 หลัก">
-
+        <div class="Box-of-ALL"><input type="text" id="studentID" name="studentID" pattern="\d{10}" required
+                placeholder="กรอกเลข 10 หลัก">
+        </div>
         <label for="faculty" class="required-label">คณะที่ศึกษา:</label>
         <select id="faculty" name="faculty" required>
             <option value="">-- กรุณาเลือกคณะ --</option>
@@ -50,21 +52,23 @@
             <option value="business">นิติศาสตร์</option>
         </select>
         <label for="email" class="required-label">ที่อยู่อีเมล:</label>
-        <input type="email" id="email" name="email" required placeholder="example@domain.com">
-        <label for="dob" class="required-label">วันเดือนปีเกิด:</label>
-        <input type="date" id="dob" name="dob" required>
+        <div class="Box-of-ALL"> <input type="email" id="email" name="email" required placeholder="example@domain.com">
+        </div> <label for="dob" class="required-label">วันเดือนปีเกิด:</label>
+        <div class="Box-of-ALL"><input type="date" id="dob" name="dob" required></div>
         <label for="phone">เบอร์โทรศัพท์ (ไม่บังคับ):</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="กรอกเลข 10 หลัก">
-      
+        <div class="Box-of-ALL"> <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"
+                placeholder="กรอกเลข 10 หลัก">
+        </div>
         <label for="bookType" class="required-label">ประเภทของหนังสือที่สนใจ:</label>
-        <textarea id="bookType" name="bookType" rows="3" placeholder="เช่น นิยาย, วิทยาศาสตร์, ประวัติศาสตร์" required></textarea>
-   
+        <div class="Box-of-ALL">   <textarea id="bookType" name="bookType" rows="3" placeholder="เช่น นิยาย, วิทยาศาสตร์, ประวัติศาสตร์"
+            required></textarea></div>
+
         <div class="newsletter-container">
             <label><input type="checkbox" name="newsletter"> ต้องการรับข่าวสารข้อมูลจากห้องสมุดทางอีเมล</label>
-          </div>
-        
-          <button type="submit">สมัครสมาชิก</button>
-         </form>
+        </div>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
 </body>
 
 </html>
