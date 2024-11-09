@@ -23,9 +23,15 @@
                 </select>
             <input type="text" id="thaiName" name="thaiName" required>
           </div>
-        
+    
           <label for="englishName" class="required-label">ชื่อ-นามสกุล (ภาษาอังกฤษ):</label>
           <input type="text" id="englishName" name="englishName" pattern="[A-Za-z\s]+" required placeholder="กรอกภาษาอังกฤษเท่านั้น">
+          <div class="gender-container">
+            <label class="required-label">เพศ:</label>
+            <label><input type="radio" name="gender" value="male" required> ชาย</label>
+            <label><input type="radio" name="gender" value="female"> หญิง</label>
+            <label><input type="radio" name="gender" value="other"> อื่นๆ</label>
+          </div>
         </form>
   </body>
 </html>
