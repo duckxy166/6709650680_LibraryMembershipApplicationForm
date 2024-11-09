@@ -18,3 +18,10 @@ body {
     text-align: center;
     color: #333;
   }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
