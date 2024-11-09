@@ -37,6 +37,18 @@
         </div>
         <label for="studentID" class="required-label">รหัสนักศึกษา:</label>
         <input type="text" id="studentID" name="studentID" pattern="\d{10}" required placeholder="กรอกเลข 10 หลัก">
+
+        <label for="faculty" class="required-label">คณะที่ศึกษา:</label>
+        <select id="faculty" name="faculty" required>
+            <option value="">-- กรุณาเลือกคณะ --</option>
+            <option value="science">วิทยาศาสตร์</option>
+            <option value="engineering">วิศวกรรมศาสตร์</option>
+            <option value="medicine">แพทยศาสตร์</option>
+            <option value="business">บริหารธุรกิจ</option>
+            <option value="business">ศิลปกรรมศาสตร์</option>
+            <option value="business">เศรษฐศาสตร์</option>
+            <option value="business">นิติศาสตร์</option>
+        </select>
     </form>
 </body>
 
