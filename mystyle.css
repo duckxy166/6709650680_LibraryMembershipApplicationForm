@@ -42,7 +42,7 @@ label {
   }
 
   .name-container select,
-.name-container input[type="text"] {
+.name-container input[type="text"],#englishName, #studentID {
   flex: 1;
   padding: 10px;
   border: 1px solid #ddd;
