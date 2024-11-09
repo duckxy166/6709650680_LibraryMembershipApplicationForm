@@ -26,3 +26,14 @@ body {
     font-weight: bold;
   }
   
+  .name-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .name-container label {
+    margin-bottom: 0;
+    font-weight: normal;
+  }
